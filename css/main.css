@@ -1,0 +1,326 @@
+/* start main rulz */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 750px;
+    }
+}
+/* end main rulz */
+
+/* start page */
+.page{
+    height: 100vh;
+}
+.page .container{
+    display: grid;
+    grid-template-columns: 20% auto 23%;
+    height: 100%;
+}
+.page .container .left-aside{
+    border-right: 1px solid #ddd;
+    height: 100%;
+    position: relative;
+    padding: 50px 0 35px;
+}
+.page .container .left-aside ul{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+.page .container .left-aside ul li{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+.page .container .left-aside ul li i{
+    margin-right: 20px;
+}.page .container .left-aside ul li:hover{
+    color: #FFE4E1 !important
+}
+.page .left-aside img{
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 9px;
+    position:absolute;
+    bottom:55px;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.page .left-aside img:hover{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.page .stats {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.page .stats form{
+    width: 400px;
+    position: relative;
+}
+.page .stats form i{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.page .stats form input{
+    width: 100%;
+    padding: 10px;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-left: 30px;
+}
+.page .stats .name{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.page .stats .name p{
+    color: #777
+}
+.page .stats .stat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #f8f6f6;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.page .stats .stat i{
+    background-color: #ece8e8;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    margin-left: -10px;
+}
+.page .stats .stat h2{
+    font-size: 50px;
+    padding: 0;
+    margin: -10px 0 -10px;
+}
+.page .stats .stat p{
+    color: #777;
+}
+.page .stats .cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+}
+.page .stats .cont > div{
+    flex-basis: 47%;
+    padding: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page .stats .cont p{
+    color: #777;
+    margin: 5px 0 5px;
+}
+.page .stats .cont span{
+    font-size: 25px;
+    font-weight: 700;
+}
+.page .stats .cont .sales{
+    background-color: mistyrose;
+}
+.page .stats .cont .profit,
+.page .stats .cont .orders{
+    background-color: azure;
+}
+.page .stats .cont .visits{
+    background-color: #f8f6f6;
+}
+.page .stats .cont > div .diagram{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+.page .stats .cont > div .diagram:hover{
+    width: 70px;
+    height: 70px;
+    font-weight: 900;
+}
+.page .stats .cont > div .diagram::before,
+.page .stats .cont > div .diagram::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.page .stats .cont > div .diagram::before{
+    border-color: black black transparent transparent;
+}
+.page .stats .cont > div .diagram::after{
+    border-color: black black transparent transparent;
+    transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    -moz-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+}
+.page .stats .cont > div.sales .diagram::before{
+    transform: rotate(85deg);
+    -webkit-transform: rotate(85deg);
+    -moz-transform: rotate(85deg);
+    -ms-transform: rotate(85deg);
+    -o-transform: rotate(85deg);
+}
+.page .stats .cont > div.sales .diagram::after{
+    transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    -moz-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+}
+.page .stats .cont > div.profit .diagram::before{
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+.page .stats .cont > div.orders .diagram::before{
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+}
+.page .stats .cont > div.orders .diagram::after{
+    transform: rotate(-14deg);
+    -webkit-transform: rotate(-14deg);
+    -moz-transform: rotate(-14deg);
+    -ms-transform: rotate(-14deg);
+    -o-transform: rotate(-14deg);
+}
+.page .stats .cont > div.visits .diagram::before{
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+}
+.page .right-aside{
+    padding: 30px 30px 40px 30px;
+}
+.page .right-aside .inner{
+    background-color: black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: white;
+    padding-top: 30px;
+    height: 100%;
+}
+.page .right-aside .inner > h3{
+    text-align: center;
+}
+.page .right-aside .inner .marketing{
+    padding: 20px 40px 20px 40px;
+}
+.page .right-aside .inner .marketing > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.page .right-aside .inner .marketing > div i{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 40px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.page .right-aside .inner .marketing > div i:hover{
+    background-color: #F0FFFF;
+}
+.page .right-aside .inner .marketing > div p{
+    color: #777;
+    font-size: 16px;
+}
